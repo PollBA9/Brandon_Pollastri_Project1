@@ -14,9 +14,9 @@ Brandon_Pollastri_Project1\Diagram
 Description: Diagram shows the layout of the Azure VMs, Security, cloud, network and more.
 
 
-Linux
--
--
+Brandon_Pollastri_Project1\Linux
+- item
+- item
 
 Description:
 
