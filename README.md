@@ -6,6 +6,7 @@ Had trouble keeping track of all the scripts needed to be added to the project; 
 
 Below is the list and descriptions for the files and folders in Brandon_Pollastri_Project1:
 
+---------------------------------------------------------------------------------------------
 
 Brandon_Pollastri_Project1\Diagram
 
@@ -37,6 +38,7 @@ Description: Contains all Playbook related files.
 - filebeat-playbook.yml
 - metricbeat-playbook.yml
 
+---------------------------------------------------------------------------------------------
 
 That should cover all content of the Project 1 files, minor changes may occur to fillout any missing content.
 By Brandon Pollastri.
