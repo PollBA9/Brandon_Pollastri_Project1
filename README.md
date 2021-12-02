@@ -25,6 +25,8 @@ Description: Folder containing all Linux related files
 Brandon_Pollastri_Project1\Ansible
 
 Description: Has all Ansible related files and folders for Config and Playbook.
+- Folder: Configuration
+- Folder: Playbook
 - elk-config.yml
 - ansible.cfg
 - MetricBeat.yml
