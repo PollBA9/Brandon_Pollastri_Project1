@@ -2,32 +2,37 @@
 Project 1 for UWA, Created by Brandon Pollastri.
 README.md
 
-I had trouble keeping track of all the components needed to be added to the project,
-But I belive everything should accounted for. From the scripts, diagram and this readme.
+Had trouble keeping track of all the scripts needed to be added to the project; But I believe everything should accounted for. From the scripts, diagram and this readme.
 
-Here is a list and descriptions to the files in Brandon_Pollastri_Project1:
+Below is the list and descriptions for the files and folders in Brandon_Pollastri_Project1:
 
 
 Brandon_Pollastri_Project1\Diagram
+Description: Diagram shows the layout of the Azure VMs, Security, cloud, network and more.
 - Diagram_Brandon Pollastri.png
 
-Description: Diagram shows the layout of the Azure VMs, Security, cloud, network and more.
-
-
 Brandon_Pollastri_Project1\Linux
-- item
-- item
-
-Description:
-
+Description: Folder containing all Linux related files
+- sys_info.sh
 
 Brandon_Pollastri_Project1\Ansible
+Description: Has all Ansible related files and folders for Config and Playbook.
 - elk-config.yml
+- ansible.cfg
 - MetricBeat.yml
+- install-elk.yml
 
-Description: Beat and config files of Azure.
+Brandon_Pollastri_Project1\Ansible\Configuration
+Description: Contains all Config related files.
+- filebeat-configuration.yml
+- metricbeat-configuration.yml
+
+Brandon_Pollastri_Project1\Ansible\Playbook
+Description: Contains all Playbook related files.
+- filebeat-playbook.yml
+- metricbeat-playbook.yml
 
 
-That should cover all content of the Project 1 files.
+That should cover all content of the Project 1 files, minor changes may occur to fillout any missing content.
 By Brandon Pollastri.
 
