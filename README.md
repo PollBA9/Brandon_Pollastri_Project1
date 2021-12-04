@@ -9,6 +9,7 @@ Below is the list and descriptions for the files and folders in Brandon_Pollastr
 ---------------------------------------------------------------------------------------------
 
 Brandon_Pollastri_Project1\Diagram
+
 Description: Diagram shows the layout of the Azure VMs, Security, cloud, network and more.
 
 - Diagram_Brandon Pollastri.png
@@ -16,6 +17,7 @@ Description: Diagram shows the layout of the Azure VMs, Security, cloud, network
 -------------------------------------------
 
 Brandon_Pollastri_Project1\Linux
+
 Description: Contains all Linux related files
 
 - sys_info.sh
@@ -23,6 +25,7 @@ Description: Contains all Linux related files
 -------------------------------------------
 
 Brandon_Pollastri_Project1\Ansible
+
 Description: Contains all Ansible related files and folders for Config and Playbook.
 
 - Folder: Configuration
@@ -35,6 +38,7 @@ Description: Contains all Ansible related files and folders for Config and Playb
 -------------------------------------------
 
 Brandon_Pollastri_Project1\Ansible\Configuration
+
 Description: Contains all Config related files.
 
 - filebeat-configuration.yml
@@ -43,6 +47,7 @@ Description: Contains all Config related files.
 -------------------------------------------
 
 Brandon_Pollastri_Project1\Ansible\Playbook
+
 Description: Contains all Playbook related files.
 
 - filebeat-playbook.yml
