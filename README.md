@@ -50,27 +50,31 @@ Only the **JumpBox** machine can accept connections from the Internet. Access to
 - **Personal IP Address**
 
 Machines within the network can only be accessed by **SSH**.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
-- **The only machines that is able to connect to the Elk-VM (10.1.0.4) is through Jumpbox(10.0.0.4) VM, then via the Web-1(10.0.0.5) and Web-2(10.0.0.6) VMs**
+- **The only machines that are able to connect to the Elk-VM (10.1.0.4) is via the Jumpbox (10.0.0.4) VM from the private IP, which pushes through the Web-1 (10.0.0.5) and Web-2 (10.0.0.6) VMs.**
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses   |
-|----------|---------------------|------------------------|
-| Jump Box | No                  | Personal IP Address    |
-| Web-1    | No                  | 10.0.0.4               |
-| Web-2    | No                  | 10.0.0.4               |
-| Elk-VM   | No                  | 10.0.0.4, 10.0.0.5, 10.0.0.6 & Personal IP | Does it use the personal IP?
+| Name     | Publicly Accessible | Allowed IP Addresses             |
+|----------|---------------------|----------------------------------|
+| Jump Box | No                  | Personal IP Address              |
+| Web-1    | No                  | 10.0.0.4                         |
+| Web-2    | No                  | 10.0.0.4                         |
+| Elk-VM   | No                  | 10.0.0.5, 10.0.0.6 & Personal IP | 
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- **The advantages of automating config through Ansible is it's ease of use and learning. In the use of Playbooks' you are able to configure multiple Machines through the use of a single command, after setting up the initial configuration.**
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- **Create a New VM for Elk' give it a simple name. Make note of the Private IP (10.1.0.4) and the Public IP (52.243.80.18), you will need the Private IP to SSH into the VM and the Public IP to connect to the Kibana Portal (HTTP Site) to view all Metric logs.**
+- 
+- **Download and Configure the elk docker container "In the hosts.conf you will need to add a new group [elkservers] and the Private IP (10.0.0.11) to the group. Then you need to create a new ansible-playbook (elk.yml) that will download, install, configures the "Elk-Server" to map the following ports [5601,9200,5044], and starts the container.**
+- 
+- **Launch and expose the container "After installing and starting the new container. You can verify that the container is up and running by SSHing into the container from your JumpBox (SAW). Once you are in the [Elk-Server] run the command [sudo docker ps]**
+- **Create new Inbound Security Rules to allow Ports: 5601 and 9200 "The Inbound Security Rules should allow access from your Personal Network."**
+- **Open a new browser and type in the [Public IP:5601] to access the Kibana Portal Site.**
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
