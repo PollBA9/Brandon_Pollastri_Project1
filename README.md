@@ -36,7 +36,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | Web-1    | Docker-AE| 10.0.0.5   | Linux            |
 | Web-2    | Docker-AE| 10.0.0.6   | Linux            |
 | Elk-VM   | Elk      | 10.1.0.4   | Linux            |
@@ -45,19 +45,22 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the **JumpBox** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
+- **Personal IP Address**
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by **SSH**.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- **The only machines that is able to connect to the Elk-VM (10.1.0.4) is through Jumpbox(10.0.0.4) VM, then via the Web-1(10.0.0.5) and Web-2(10.0.0.6) VMs**
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name     | Publicly Accessible | Allowed IP Addresses   |
+|----------|---------------------|------------------------|
+| Jump Box | No                  | Personal IP Address    |
+| Web-1    | No                  | 10.0.0.4               |
+| Web-2    | No                  | 10.0.0.4               |
+| Elk-VM   | No                  | 10.0.0.4, 10.0.0.5, 10.0.0.6 & Personal IP | Does it use the personal IP?
 
 ### Elk Configuration
 
