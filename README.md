@@ -19,24 +19,27 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+- The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly **available**, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+- Load balancing ensures that the application will be highly **available**, in addition to restricting **access** to the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- **Load Balancer adds to the availability of security in regards to the CIA Triad.**
+
+- **The advantage of a JumpBox is setting up a beginning point for starting Administrative Tasks. This sets the JumpBox as a "Secure Admin Workstation" or SAW for short. All Administrators conducting any Administrative Tasks will be required to connect to the JumpBox aka SAW before perfoming any task.**
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the **logs** and system **traffic**.
+- **Filebeat watches out for log files plus locations, and collects log events.**
+- **Metricbeat records metric & statistical data from the operating system, and from services running on the server.**
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+**| Name     | Function | IP Address | Operating System |
+  |----------|----------|------------|------------------|
+  | Jump Box | Gateway  | 10.0.0.1   | Linux            |
+  | Web-1    | Docker-AE| 10.0.0.5   | Linux            |
+  | Web-2    | Docker-AE| 10.0.0.6   | Linux            |
+  | Elk-VM   | Elk      | 10.1.0.4   | Linux            |**
 
 ### Access Policies
 
