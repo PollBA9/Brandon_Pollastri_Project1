@@ -92,22 +92,30 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- **Copy the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) and [metricbeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/metricbeat-configuration.yml) files to /etc/ansible/host.**
-- **Update the configuration files to include the Private IP of the Elk-VM to the ElasticSearch and Kibana area of the configuration file.**
-- **Run the playbook, and navigate to Elk-VM to check that the installation worked as expected. [docker ps]**
 
-- **The playbook is called filebeat-playbook.yml. You copy the file to the "/etc/Ansible/Playbook/" directory.**
-- **The file you need to update is the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) file which is a configuration file which will be dropped into the Elk-VM during the run of the ansible playbook. When you update the host.cfg file in the ansible directory you will need to create a new group and add the Private IP of the Elk-VM to the group. Then when configuring the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) file you need to designate the Private IP of the Elk-VM.**
-- **The URL used to verify that the Elk-VM is running' is the Public IP (0.0.0.0:5601).**
+- **Copy the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) and [metricbeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/metricbeat-configuration.yml) files to the /etc/ansible/Configuration folder.**
+
+- **Update the config files to include the Private IP of the Elk-VM to the ElasticSearch and Kibana area of the config file.**
+
+- **The playbook is called [filebeat-playbook.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Playbook/filebeat-playbook.yml). You'll copy the file to the "/etc/Ansible/Playbook/" directory.**
+
+- **Once the new playbook file [filebeat-playbook.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Playbook/filebeat-playbook.yml) is in the /etc/ansible/Playbook folder, that will install into the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) and [metricbeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/metricbeat-configuration.yml) files in the /etc/ansible/Configuration folder. Update the configuration files, and start the service for both Filebeat and Metricbeat.**
+
+- **Run the playbook, and go to Elk-VM to see if the installation is working as expected. [docker ps]**
+
+- **To specify; You will need the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) file updated, which is a configuration file that will be dropped into the Elk-VM during the run of the ansible playbook. When you update the host.cfg files in the ansible directory you will need to create a new group and add the Private IP of the Elk-VM to the group. Then when configuring the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) file, you will need to designate the Private IP of the Elk-VM into .yml files**
+
+- **To verify that the Elk-VM is running' use the Public IP (0.0.0.0:5601).**
 
 Bonus: The commands needed to run the Ansible configuration for the Elk-VM:
 
-- ssh sysadmin@JumpBox(PrivateIP)
-- sudo docker container list -a (locates your ansible container)
-- sudo docker start container (name of the container)
-- sudo docker attach container (name of the container)
+- ssh sysadmin@Elk-VM
+- sudo docker container list -a
+- sudo docker start container
+- sudo docker attach container
 - cd /etc/ansible/
-- ansible-playbook elk-config.yml (configures Elk-VM and starts the Elk container on the Elk-VM) wait a couple minutes for the implementation of the Elk-VM.
-- cd /etc/ansible/roles/
+- ansible-playbook elk-config.yml 
+- (Wait a couple minutes for the implementation of the Elk-VM. This configures the Elk-VM and starts the Elk container on the Elk-VM)
+- cd /etc/ansible/Playbook
 - cd ansible, playbook filebeat-playbook.yml (installs Filebeat and Metricbeat)
-- open a web browser (52.243.80.18:5601/app/kibana#/home or Elk-VM PublicIP:5601) This will show the Kibana Web Portal.
+- open a web browser (http://52.243.80.18:5601/app/kibana#/home), this will show the Kibana Web Portal.
