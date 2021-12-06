@@ -96,7 +96,7 @@ SSH into the control node and follow the steps below:
 
 - **Update the config files to include the Private IP of the Elk-VM to the ElasticSearch and Kibana area of the config file.**
 
-- **The playbook is called [filebeat-playbook.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Playbook/filebeat-playbook.yml). You'll copy the file to the "/etc/Ansible/Playbook/" directory.**
+- **The playbook is called [filebeat-playbook.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Playbook/filebeat-playbook.yml). You'll copy the file to the /etc/Ansible/Playbook folder.**
 
 - **Once the new playbook file [filebeat-playbook.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Playbook/filebeat-playbook.yml) is in the /etc/ansible/Playbook folder, that will install into the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) and [metricbeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/metricbeat-configuration.yml) files in the /etc/ansible/Configuration folder. Update the configuration files, and start the service for both Filebeat and Metricbeat.**
 
