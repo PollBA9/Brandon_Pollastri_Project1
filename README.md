@@ -109,13 +109,13 @@ SSH into the control node and follow the steps below:
 
 Bonus: The commands needed to run the Ansible configuration for the Elk-VM:
 
-- ssh sysadmin@Elk-VM
-- sudo docker container list -a
-- sudo docker start container
-- sudo docker attach container
-- cd /etc/ansible/
-- ansible-playbook elk-config.yml 
-- (Wait a couple minutes for the implementation of the Elk-VM. This configures the Elk-VM and starts the Elk container on the Elk-VM)
-- cd /etc/ansible/Playbook
-- cd ansible, playbook filebeat-playbook.yml (installs Filebeat and Metricbeat)
-- open a web browser (http://52.243.80.18:5601/app/kibana#/home), this will show the Kibana Web Portal.
+- **ssh sysadmin@Elk-VM**
+- **sudo docker container list -a**
+- **sudo docker start container**
+- **sudo docker attach container**
+- **cd /etc/ansible/**
+- **ansible-playbook elk-config.yml**
+- **(Wait a couple minutes for the implementation of the Elk-VM. This configures the Elk-VM and starts the Elk container on the Elk-VM)**
+- **cd /etc/ansible/Playbook**
+- **cd ansible, playbook filebeat-playbook.yml (installs Filebeat and Metricbeat)**
+- **open a web browser (http://52.243.80.18:5601/app/kibana#/home), this will show the Kibana Web Portal.**
