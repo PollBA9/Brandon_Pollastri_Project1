@@ -96,7 +96,6 @@ SSH into the control node and follow the steps below:
 - **Update the configuration files to include the Private IP of the Elk-VM to the ElasticSearch and Kibana area of the configuration file.**
 - **Run the playbook, and navigate to Elk-VM to check that the installation worked as expected. [docker ps]**
 
-_TODO: Answer the following questions to fill in the blanks:_
 - **The playbook is called filebeat-playbook.yml. You copy the file to the "/etc/Ansible/Playbook/" directory.**
 - **The file you need to update is the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) file which is a configuration file which will be dropped into the Elk-VM during the run of the ansible playbook. When you update the host.cfg file in the ansible directory you will need to create a new group and add the Private IP of the Elk-VM to the group. Then when configuring the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) file you need to designate the Private IP of the Elk-VM.**
 - **The URL used to verify that the Elk-VM is running' is the Public IP (0.0.0.0:5601).**
