@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Diagram/Diagram_Large.png)
+![Large diagram example](Diagram/Diagram_Large.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **.yml** file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -74,7 +74,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of a running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/sudo_docker_ps.png)
+![sudo docker ps output](Images/sudo_docker_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -121,4 +121,4 @@ Bonus: The commands needed to run the Ansible configuration for the Elk-VM:
 
 **This is what the Kibana Home Page should look like.**
 
-(Images/Kibana_Homepage.PNG)
+![Kibana Home Page](Images/Kibana_Homepage.PNG)
