@@ -118,3 +118,7 @@ Bonus: The commands needed to run the Ansible configuration for the Elk-VM:
 - **cd /etc/ansible/Playbook**
 - **ansible-playbook filebeat-playbook.yml (installs Filebeat and Metricbeat)**
 - **open a web browser (http://52.243.80.18:5601/app/kibana#/home), this will show the Kibana home Web page.**
+
+**This is what the Kibana Home Page should look like.**
+
+(Images/Kibana_Homepage.PNG)
