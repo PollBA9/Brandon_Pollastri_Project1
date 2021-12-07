@@ -100,7 +100,7 @@ SSH into the control node and follow the steps below:
 
 - **Once the new playbook file [filebeat-playbook.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Playbook/filebeat-playbook.yml) is in the /etc/ansible/Playbook folder, that will install into the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) and [metricbeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/metricbeat-configuration.yml) files in the /etc/ansible/Configuration folder. Update the configuration files, and start the service for both Filebeat and Metricbeat.**
 
-- **Once you'd run the playbook, go to Elk-VM to see if the installation is working as expected. [docker ps]**
+- **Once you'd run the playbook, go to Elk-VM to see if the installation is working as expected. `docker ps`**
 
 - **To specify; You will need the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) file updated, which is a configuration file that will be dropped into the Elk-VM during the run of the ansible playbook. When you update the host.cfg files in the ansible directory you will need to create a new group and add the Private IP of the Elk-VM to the group. Then when configuring the [filebeat-configuration.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/Configuration/filebeat-configuration.yml) file, you will need to designate the Private IP of the Elk-VM into .yml files**
 
