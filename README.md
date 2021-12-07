@@ -68,7 +68,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The playbook implements the following tasks:
 - **Create a New VM for Elk' give it a simple name. Make note of the Private IP (10.1.0.4) and the Public IP (0.0.0.0), you will need the Private IP to SSH into the VM and the Public IP to connect to the Kibana Portal (HTTP Site) to view all Metric logs.**
 - **Download and Configure the Elk docker container' then you will need to add a new group, the elk server and the Private IP (10.1.0.4) to the group. You'll need to create a new ansible-playbook [install-elk.yml](https://github.com/PollBA9/Brandon_Pollastri_Project1/blob/main/Ansible/install-elk.yml) that will download, install and configure the Elk-VM, to map the ports (5601,9200,5044) and start the container.**
-- **Launch and show the container after installing and starting the new container. You can verify that the container is up and working, via SSHing into the container from your JumpBox (SAW). Once you are in the Elk-VM, run the command "sudo docker ps"**
+- **Launch and show the container after installing and starting the new container. You can verify that the container is up and working, via SSHing into the container from your JumpBox (SAW). Once you are in the Elk-VM, run the command `sudo docker ps`**
 - **Create the Inbound Security Rules to allow the Ports 5601 and 9200. The Inbound Security Rules should allow access from your Personal Network."**
 - **Open a new browser and type in the Public IP to access the Kibana Portal Site.**
 
