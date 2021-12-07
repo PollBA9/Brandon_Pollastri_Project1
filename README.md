@@ -85,7 +85,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - **Filebeat is for forwarding and setting up log data. It monitors log files as well locations that you specify, which collect into log events that forwards into either Elacticsearch or Logstash.**
-- **Metricbeat takes the statistics and metrics into account, which it also collects and forwards to either Elacticsearch or Logstash.**
+- **Metricbeat takes the metrics from the system and running services into account. Then with the statistics and metrics collected' it forwards  it to an output you have designated.**
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
